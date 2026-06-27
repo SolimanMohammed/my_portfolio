@@ -6,21 +6,34 @@
     <title>Soliman Mohammed | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <meta name="description" content="Dr. Soliman Mohammed Portfolio, Full Stack Developer and IT Researcher">
+    <meta name="keywords" content="Soliman Mohammed, Full Stack Developer, IT Researcher, Portfolio">
+    <meta name="author" content="Dr. Soliman Mohammed">
+    <meta property="og:title" content="Dr. Soliman Mohammed Portfolio">
+    <meta property="og:description" content="Full Stack Developer and IT Researcher">
+    <meta property="og:image" content="assets/profile.jpg">
   </head>
   
   <body>
+    <div id="progressBar"></div>
     <header>
       <nav class="navbar">
         <div class="logo">Dr. Soliman<span>.</span></div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#certificates">Certificates</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about"        data-lang="nav_about">About</a></li>
+          <li><a href="#services"     data-lang="nav_services">Services</a></li>
+          <li><a href="#skills"       data-lang="nav_skills">Skills</a></li>
+          <li><a href="#projects"     data-lang="nav_projects">Projects</a></li>
+          <li><a href="#certificates" data-lang="nav_certificates">Certificates</a></li>
+          <li><a href="#gallery"      data-lang="nav_gallery">Gallery</a></li>
+          <li><a href="#reviews"      data-lang="nav_reviews">Reviews</a></li>
+          <li><a href="#contact"      data-lang="nav_contact">Contact</a></li>
         </ul>
         
         <button id="langToggle" class="btn-language">AR</button>
@@ -34,16 +47,18 @@
       
       <div class="hero">
         <div class="hero-text">
-          <h1>Hi, I'm<span> Soliman Mohammed</span></h1>
-          <h2>Full Stack Developer | IT Researcher</h2>
-          <p>Freelancer, Teaching Assistant,
+          <h1 data-lang="hero_title">Hi, I'm<span> Soliman Mohammed</span></h1>
+          <h2 id="typing-container">
+            <span class="typing"></span>
+          </h2>
+          <p data-lang="hero_desc">Freelancer, Teaching Assistant,
             Master's Researcher and Future PhD Candidate.
             Building modern web applications and innovative solutions.
           </p>
 
           <div class="hero-buttons">
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="assets/cv.pdf" class="btn btn-outline" target="_blank">Download CV</a>
+            <a href="#projects" class="btn" data-lang="btn_projects">View Projects</a>
+            <a href="assets/cv.pdf" class="btn btn-outline" target="_blank" data-lang="btn_cv">Download CV</a>
           </div>
         </div>
 
@@ -56,36 +71,36 @@
     <!-- ====================================== Stats Section ====================================== -->
     <section id="stats">
       <div class="container">
-        <h2 class="section-title">My Statistics</h2>
+        <h2 class="section-title" data-lang="stats_title">My Statistics</h2>
         <div class="stats-grid">
           <div class="stat-card">
             <i class="fa-solid fa-users"></i>
             <h3 class="counter" data-target="398">0</h3>
-            <p>Clients</p>
+            <p data-lang="stats_clients">Clients</p>
           </div>
 
           <div class="stat-card">
             <i class="fa-solid fa-star"></i>
             <h3 class="counter" data-target="352">0</h3>
-            <p>Reviews</p>
+            <p data-lang="stats_reviews">Reviews</p>
           </div>
 
           <div class="stat-card">
             <i class="fa-solid fa-circle-check"></i>
             <h3 class="counter" data-target="100">0</h3>
-            <p>Completion Rate %</p>
+            <p data-lang="stats_completion">Completion Rate %</p>
           </div>
 
           <div class="stat-card">
             <i class="fa-solid fa-briefcase"></i>
             <h3 class="counter" data-target="10">0</h3>
-            <p>Professional Services</p>
+            <p data-lang="stats_services">Professional Services</p>
           </div>
 
           <div class="stat-card">
             <i class="fa-solid fa-bolt"></i>
             <h3 class="counter" data-target="14">0</h3>
-            <p>Avg Response (min)</p>
+            <p data-lang="stats_response">Avg Response (min)</p>
           </div>
         </div>
       </div>
@@ -94,8 +109,8 @@
     <!-- ====================================== About Section ====================================== -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <p>I am Soliman Mohammed, an IT specialist, freelancer and researcher.
+        <h2 class="section-title" data-lang="about_title">About Me</h2>
+        <p data-lang="about_desc">I am Soliman Mohammed, an IT specialist, freelancer and researcher.
            I hold a Bachelor's degree in Information Technology from Suez University with a GPA of 3.54.
            Currently pursuing my Master's degree in IT (2026) and preparing for a PhD journey.
            I worked as a Teaching Assistant at Modern Academy and Suez National University.
@@ -103,166 +118,137 @@
         </p>
       </div>
     </section>
-<section id="experience">
 
-    <div class="container">
-
-        <h2 class="section-title">Experience</h2>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <h3>Teaching Assistant</h3>
-                <p>
-                    Modern Academy & Suez National University.
-                </p>
-            </div>
-
-            <div class="project-card">
-                <h3>Freelancer</h3>
-                <p>
-                    Full Stack Developer on Khamsat and freelance platforms.
-                </p>
-            </div>
-
-            <div class="project-card">
-                <h3>Master's Researcher</h3>
-                <p>
-                    Conducting research in IT, Security and Software Engineering.
-                </p>
-            </div>
-
+    <!-- ====================================== Experience Section ====================================== -->
+    <section id="experience">
+      <div class="timeline">
+        <div class="timeline-item">
+          <span>2024</span>
+          <h3>Teaching Assistant</h3>
+          <p>Modern Academy</p>
         </div>
 
-    </div>
+        <div class="timeline-item">
+          <span>2025</span>
+          <h3>Freelancer</h3>
+          <p>Khamsat Platform</p>
+        </div>
+      </div>
+    </section>
 
-</section>
     <!-- ====================================== Services Section ====================================== -->
     <section id="services">
-
-    <div class="container">
-
-        <h2 class="section-title">My Services</h2>
-
+      <div class="container">
+        <h2 class="section-title" data-lang="services_title">My Services</h2>
         <div class="projects-grid">
+          <div class="project-card">
+            <i class="fa-solid fa-diagram-project"></i>
+            <h3 data-lang="service_uml_title">Software Engineering & UML Design</h3>
+            <p data-lang="service_uml_desc">
+              Designing professional UML diagrams including Use Case,
+              Class, Sequence, Activity and ER diagrams for software projects.
+            </p>
+          </div>
 
-            <div class="project-card">
-                <i class="fa-solid fa-diagram-project"></i>
-                <h3>Software Engineering & UML Design</h3>
-                <p>
-                    Designing professional UML diagrams including Use Case,
-                    Class, Sequence, Activity and ER diagrams for software projects.
-                </p>
-            </div>
+          <div class="project-card">
+            <i class="fa-solid fa-code"></i>
+            <h3 data-lang="service_web_title">Web Development</h3>
+            <p data-lang="service_web_desc">
+              Designing and developing responsive websites using
+              HTML5, CSS3, PHP and MySQL.
+            </p>
+          </div>
 
-            <div class="project-card">
-                <i class="fa-solid fa-code"></i>
-                <h3>Web Development</h3>
-                <p>
-                    Designing and developing responsive websites using
-                    HTML5, CSS3, PHP and MySQL.
-                </p>
-            </div>
+          <div class="project-card">
+            <i class="fa-solid fa-language"></i>
+            <h3 data-lang="service_translation_title">Translation & Proofreading</h3>
+            <p data-lang="service_translation_desc">
+              Professional translation and linguistic proofreading
+              in both Arabic and English languages.
+            </p>
+          </div>
 
-            <div class="project-card">
-                <i class="fa-solid fa-language"></i>
-                <h3>Translation & Proofreading</h3>
-                <p>
-                    Professional translation and linguistic proofreading
-                    in both Arabic and English languages.
-                </p>
-            </div>
+          <div class="project-card">
+            <i class="fa-solid fa-file-word"></i>
+            <h3 data-lang="service_pdf_title">PDF & Document Conversion</h3>
+            <p data-lang="service_pdf_desc">
+              Converting scanned documents, PDF files and images
+              into editable Word documents with high accuracy.
+            </p>
+          </div>
 
-            <div class="project-card">
-                <i class="fa-solid fa-file-word"></i>
-                <h3>PDF & Document Conversion</h3>
-                <p>
-                    Converting scanned documents, PDF files and images
-                    into editable Word documents with high accuracy.
-                </p>
-            </div>
+          <div class="project-card">
+            <i class="fa-solid fa-headphones"></i>
+            <h3 data-lang="service_audio_title">Audio & Video Transcription</h3>
+            <p data-lang="service_audio_desc">
+              Accurate transcription of lectures, interviews and
+              multimedia files in Arabic and English.
+            </p>
+          </div>
 
-            <div class="project-card">
-                <i class="fa-solid fa-headphones"></i>
-                <h3>Audio & Video Transcription</h3>
-                <p>
-                    Accurate transcription of lectures, interviews and
-                    multimedia files in Arabic and English.
-                </p>
-            </div>
+          <div class="project-card">
+            <i class="fa-solid fa-file-powerpoint"></i>
+            <h3 data-lang="service_presentation_title">Presentation Design</h3>
+            <p data-lang="service_presentation_desc">
+              Creating professional PowerPoint presentations in Arabic
+              and English with modern and attractive designs.
+            </p>
+          </div>
 
-            <div class="project-card">
-                <i class="fa-solid fa-file-powerpoint"></i>
-                <h3>Presentation Design</h3>
-                <p>
-                    Creating professional PowerPoint presentations in Arabic
-                    and English with modern and attractive designs.
-                </p>
-            </div>
+          <div class="project-card">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h3 data-lang="service_tutoring_title">Programming Tutoring</h3>
+            <p data-lang="service_tutoring_desc">
+              Teaching and solving programming problems including
+              Assembly Language and software engineering subjects.
+            </p>
+          </div>
 
-            <div class="project-card">
-                <i class="fa-solid fa-user-graduate"></i>
-                <h3>Programming Tutoring</h3>
-                <p>
-                    Teaching and solving programming problems including
-                    Assembly Language and software engineering subjects.
-                </p>
-            </div>
+          <div class="project-card">
+            <i class="fa-solid fa-file-lines"></i>
+            <h3 data-lang="service_writing_title">Technical Writing</h3>
+            <p data-lang="service_writing_desc">
+              Writing professional descriptions for websites,
+              applications and technical products.
+            </p>
+          </div>
 
-            <div class="project-card">
-                <i class="fa-solid fa-file-lines"></i>
-                <h3>Technical Writing</h3>
-                <p>
-                    Writing professional descriptions for websites,
-                    applications and technical products.
-                </p>
-            </div>
+          <div class="project-card">
+            <i class="fa-solid fa-id-card"></i>
+            <h3 data-lang="service_cv_title">CV & Resume Design</h3>
+            <p data-lang="service_cv_desc">
+              Designing professional resumes and CVs in Arabic
+              and English languages.
+            </p>
+          </div>
 
-            <div class="project-card">
-                <i class="fa-solid fa-id-card"></i>
-                <h3>CV & Resume Design</h3>
-                <p>
-                    Designing professional resumes and CVs in Arabic
-                    and English languages.
-                </p>
-            </div>
-
-<div class="project-card">
-
-    <i class="fa-solid fa-file-circle-check"></i>
-
-    <h3>Report Writing & Formatting</h3>
-
-    <p>
-        Preparing, formatting and professionally editing academic,
-        technical and business reports in Arabic and English.
-    </p>
-
-</div>
-
+          <div class="project-card">
+            <i class="fa-solid fa-file-circle-check"></i>
+            <h3 data-lang="service_reports_title">Report Writing & Formatting</h3>
+            <p data-lang="service_reports_desc">
+              Preparing, formatting and professionally editing academic,
+              technical and business reports in Arabic and English.
+            </p>
+          </div>
         </div>
 
         <div style="text-align:center; margin-top:40px;">
+          <a href="https://khamsat.com/user/soliman_mohammed2"
+            target="_blank"
+            class="btn"
+            data-lang="btn_khamsat">
 
-            <a href="https://khamsat.com/user/soliman_mohammed2"
-               target="_blank"
-               class="btn">
-
-               <i class="fa-solid fa-briefcase"></i>
+            <i class="fa-solid fa-briefcase"></i>
                View All Services on Khamsat
-
-            </a>
-
+          </a>
         </div>
-
-    </div>
-
-</section>
+      </div>
+    </section>
 
     <!-- ====================================== Skills Section ====================================== -->
     <section id="skills">
       <div class="container">
-        <h2 class="section-title">Skills</h2>
+        <h2 class="section-title" data-lang="skills_title">Skills</h2>
         <div class="skills-grid">
           <div class="card">PHP</div>
           <div class="card">Laravel</div>
@@ -283,36 +269,36 @@
     <!-- ====================================== Projects Section ====================================== -->
     <section id="projects">
       <div class="container">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title" data-lang="projects_title">Projects</h2>
         <div class="projects-grid">
           <div class="project-card">
-            <h3>ERP Management System</h3>
-            <p>Complete ERP System for enterprises.</p>
+            <h3 data-lang="project_erp_title">ERP Management System</h3>
+            <p data-lang="project_erp_desc">Complete ERP System for enterprises.</p>
           </div>
 
           <div class="project-card">
-            <h3>ANPR System</h3>
-            <p>Automatic Number Plate Recognition.</p>
+            <h3 data-lang="project_anpr_title">ANPR System</h3>
+            <p data-lang="project_anpr_desc">Automatic Number Plate Recognition.</p>
           </div>
 
           <div class="project-card">
-            <h3>E-Commerce Platform</h3>
-            <p>Online shopping system with payment integration.</p>
+            <h3 data-lang="project_ecommerce_title">E-Commerce Platform</h3>
+            <p data-lang="project_ecommerce_desc">Online shopping system with payment integration.</p>
           </div>
 
           <div class="project-card">
-            <h3>Hospital Management System</h3>
-            <p>Patient and medical records management.</p>
+            <h3 data-lang="project_hospital_title">Hospital Management System</h3>
+            <p data-lang="project_hospital_desc">Patient and medical records management.</p>
           </div>
 
           <div class="project-card">
-            <h3>Portfolio Websites</h3>
-            <p>Modern personal and business portfolio websites.</p>
+            <h3 data-lang="project_portfolio_title">Portfolio Websites</h3>
+            <p data-lang="project_portfolio_desc">Modern personal and business portfolio websites.</p>
           </div>
 
           <div class="project-card">
-            <h3>Freelance Solutions</h3>
-            <p>Custom software solutions for clients.</p>
+            <h3 data-lang="project_freelance_title">Freelance Solutions</h3>
+            <p data-lang="project_freelance_desc">Custom software solutions for clients.</p>
           </div>
         </div>
       </div>
@@ -321,26 +307,26 @@
     <!-- ====================================== Certificates Section ====================================== -->
     <section id="certificates">
       <div class="container">
-        <h2 class="section-title">Certificates</h2>
+        <h2 class="section-title" data-lang="certificates_title">Certificates</h2>
         <div class="projects-grid">
           <div class="project-card">
-            <h3>Huawei HCIA</h3>
-            <p>Huawei Technologies Certification.</p>
+            <h3 data-lang="certificate_huawei_title">Huawei HCIA</h3>
+            <p data-lang="certificate_huawei_desc">Huawei Technologies Certification.</p>
           </div>
 
           <div class="project-card">
-            <h3>Network Security</h3>
-            <p>Cyber Security and Network Protection.</p>
+            <h3 data-lang="certificate_network_security_title">Network Security</h3>
+            <p data-lang="certificate_network_security_desc">Cyber Security and Network Protection.</p>
           </div>
 
           <div class="project-card">
-            <h3>Web Development</h3>
-            <p>Advanced Full Stack Development Training.</p>
+            <h3 data-lang="certificate_web_title">Web Development</h3>
+            <p data-lang="certificate_web_desc">Advanced Full Stack Development Training.</p>
           </div>
 
           <div class="project-card">
-            <h3>Research Methodology</h3>
-            <p>Scientific Research and Academic Publishing.</p>
+            <h3 data-lang="certificate_research_title">Research Methodology</h3>
+            <p data-lang="certificate_research_desc">Scientific Research and Academic Publishing.</p>
           </div>
         </div>
       </div>
@@ -349,7 +335,7 @@
     <!-- ====================================== Gallery Section ====================================== -->
     <section id="gallery">
       <div class="container">
-        <h2 class="section-title">Gallery</h2>
+        <h2 class="section-title" data-lang="gallery_title">Gallery</h2>
         <div class="gallery-slider">
           <div class="gallery-track">
             <img src="assets/gallery1.png">
@@ -383,23 +369,23 @@
     <!-- ====================================== Reviews Section ====================================== -->
     <section id="reviews">
       <div class="container">
-        <h2 class="section-title">Client Reviews</h2>
+        <h2 class="section-title" data-lang="reviews_title">Client Reviews</h2>
         <div class="reviews-slider">
           <div class="review-card">
             <div class="stars">★★★★★</div>
-            <p>"Professional, fast response and excellent communication."</p>
+            <p data-lang="review1">"Professional, fast response and excellent communication."</p>
             <h4>Client</h4>
           </div>
 
           <div class="review-card">
             <div class="stars">★★★★★</div>
-            <p>"Delivered exactly what I needed and on time."</p>
+            <p data-lang="review2">"Delivered exactly what I needed and on time."</p>
             <h4>Client</h4>
           </div>
 
           <div class="review-card">
             <div class="stars">★★★★★</div>
-            <p>"Highly recommended, great technical skills."</p>
+            <p data-lang="review3">"Highly recommended, great technical skills."</p>
             <h4>Client</h4>
           </div>
         </div>
@@ -409,24 +395,24 @@
     <!-- ====================================== Contact Section ====================================== -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
+        <h2 class="section-title" data-lang="contact_title">Contact</h2>
         <div class="contact-box">
-          <a href="mailto:soliman.mohammed22@gmail.com">
+          <a href="mailto:soliman.mohammed22@gmail.com" data-lang="contact_email">
             <i class="fa-solid fa-envelope"></i>
             Email
           </a>
 
-          <a href="tel:01090250380">
+          <a href="tel:01090250380" data-lang="contact_phone">
             <i class="fa-solid fa-phone"></i>
             Phone
           </a>
 
-          <a href="https://khamsat.com/user/soliman_mohammed2" target="_blank">
+          <a href="https://khamsat.com/user/soliman_mohammed2" target="_blank" data-lang="contact_khamsat">
             <i class="fa-solid fa-briefcase"></i>
             Khamsat
           </a>
 
-          <a href="https://linkedin.com/in/soliman-mohammed-894362184" target="_blank">
+          <a href="https://linkedin.com/in/soliman-mohammed-894362184" target="_blank" data-lang="contact_linkedin">
             <i class="fab fa-linkedin"></i>
             LinkedIn
           </a>
@@ -439,18 +425,54 @@
     </button>
 
     <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
 
     <footer class="footer">
-      <h3>Soliman Mohammed</h3>
-      <p>Full Stack Developer | IT Researcher</p>
+      <h3 data-lang="footer_name">Soliman Mohammed</h3>
+      <p data-lang="footer_job">Full Stack Developer | IT Researcher</p>
       <div class="footer-social">
         <a href="#"><i class="fab fa-linkedin"></i></a>
         <a href="#"><i class="fab fa-github"></i></a>
         <a href="#"><i class="fab fa-facebook"></i></a>
       </div>
 
-      <p class="copyright">© 2026 All Rights Reserved.</p>
+      <div class="visitor-counter">
+        <img src="https://visitor-badge.laobi.icu/badge?page_id=dr-soliman-portfolio" alt="Visitors">
+
+        <p data-lang="visitors_count">Website Visitors</p>
+      </div>
+      <p class="copyright" data-lang="footer_copy">© 2026 All Rights Reserved.</p>
     </footer>
-    
+
+    <!-- =========================
+        Lightbox
+    ========================= -->
+
+    <div class="lightbox" id="lightbox">
+
+    <span class="close-lightbox">&times;</span>
+
+    <span class="prev-lightbox">
+        <i class="fa-solid fa-chevron-left"></i>
+    </span>
+
+    <img class="lightbox-image" src="" alt="Gallery Image">
+
+    <span class="next-lightbox">
+        <i class="fa-solid fa-chevron-right"></i>
+    </span>
+
+    <div class="zoom-controls">
+        <button id="zoomIn">+</button>
+        <button id="zoomOut">−</button>
+    </div>
+
+    <div class="lightbox-caption">
+        <h3 class="caption-title"></h3>
+        <p class="caption-desc"></p>
+    </div>
+
+</div>
+
   </body>
 </html>

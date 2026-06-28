@@ -632,9 +632,9 @@ body:not(.light-mode) .toggle-circle{
         justify-content: center;
         width: 100%;
     }
-    
+
     .hero{
-        flex-direction:column-reverse;
+        flex-direction: column-reverse !important;
         text-align:center;
         gap:40px;
     }

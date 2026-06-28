@@ -824,6 +824,10 @@ html[dir="rtl"] .nav-links{
     html[dir="rtl"] .nav-links{
         flex-direction: column;
     }
+
+    html[dir="rtl"] #skills .card{
+        text-align:center;
+    }
 }
 
 /* Text Alignment */

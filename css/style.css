@@ -619,6 +619,20 @@ body:not(.light-mode) .toggle-circle{
 
 @media(max-width:768px){
 
+    html[dir="rtl"] .hero{
+        flex-direction: column-reverse;
+    }
+
+    html[dir="rtl"] .navbar{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    html[dir="rtl"] .nav-links{
+        justify-content: center;
+        width: 100%;
+    }
+    
     .hero{
         flex-direction:column-reverse;
         text-align:center;
